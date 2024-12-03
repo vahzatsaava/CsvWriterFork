@@ -3,6 +3,7 @@ package org.writer.model;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
+import org.writer.csv.Csv;
 
 import java.util.List;
 
@@ -11,7 +12,9 @@ import java.util.List;
 @AllArgsConstructor
 public class Student {
 
+    @Csv(headerName = "Name")
     private String name;
 
+    @Csv(headerName = "Scores")
     private List<String> score;
 }
