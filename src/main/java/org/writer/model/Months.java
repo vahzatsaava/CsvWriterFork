@@ -1,6 +1,7 @@
 package org.writer.model;
 
 public enum Months {
+
     JANUARY,
     FEBRUARY,
     MARCH,
